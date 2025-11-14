@@ -1,0 +1,67 @@
+1.1
+ 5 
+ 35 
+ 25 
+ 217 
+ 41 
+ 2 
+ROM:Discard Changes && Exit
+ 0 
+Overlay  1
+ 0 
+ 0 
+ 15 
+ 2 
+ 0 
+ 34 
+ 42 
+ 192 
+ 58 
+ 2 
+ROM:Save Changes && Exit
+ 0 
+Overlay  2
+ 0 
+ 0 
+ 15 
+ 2 
+ 0 
+ 34 
+ 58 
+ 186 
+ 72 
+ 2 
+ROM:Get Default Values
+ 0 
+Overlay  3
+ 0 
+ 0 
+ 15 
+ 2 
+ 0 
+ 35 
+ 71 
+ 199 
+ 87 
+ 2 
+ROM:Load Previous Values
+ 0 
+Overlay  4
+ 0 
+ 0 
+ 15 
+ 2 
+ 0 
+ 35 
+ 89 
+ 137 
+ 105 
+ 2 
+ROM:Save Changes
+ 0 
+Overlay  5
+ 0 
+ 0 
+ 15 
+ 2 
+ 0 

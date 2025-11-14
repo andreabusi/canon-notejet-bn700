@@ -1,0 +1,580 @@
+[FMain]
+Form		= Computer Specifications,,,,,,
+TagTxt		= ,Times New Roman,9.75,,,,
+TopicBtn	= ,Terminal,9.75,,,,
+SysBtn		= ,MS Sans Serif,9.75,,,,
+StatusBar	= ,MS Sans Serif,9.75,,,,
+TopicName	= ,Times New Roman,9.75,,,,
+TopicText	= ,,,,,,
+LabelTitle	= ,MS Sans Serif,8.25,,,,
+SelBtn		= ,MS Sans Serif,8.25,,,,
+
+[PDialog]
+Form		= ,,,,,,
+DefPrnTitle	= Default Printer,Times New Roman,9.75,,,,
+DefPrnName	= ,MS Sans Serif,9.75,,,,
+CurrentTopic	= ,Times New Roman,9.75,,,,
+Switch1		= C&urrent topic,Times New Roman,9.75,,,,
+Switch2		= &All topics,Times New Roman,9.75,,,,
+Switch3		= &Selected topic(s),Times New Roman,9.75,,,,
+SelClear	= C&lear the selection(s),Times New Roman,9.75,,,,
+Choice		= ,Times New Roman,9.75,,,,
+OKBtn		= &OK,Times New Roman,9.75,,,,
+CanBtn		= &Cancel,Times New Roman,9.75,,,,
+SetupBtn	= S&etting...,Times New Roman,9.75,,,,
+Title		= Print,Times New Roman,9.75,,,,
+
+[NowPrint]
+Form		= ,,,,,,
+WaitMsg		= Now printing... One moment.,Times New Roman,8.25,,,,
+CanBtn		= &Cancel,,,,,,
+
+[Messages]
+1 = The printer has been changed.  Exit and try again.
+2 = No topic has been selected.
+3 = <Page>Keyword not found.
+4 = No default printer.
+
+[Status]
+1 = Displays the Topic "@0".
+2 = Displays the Help.
+3 = Prints the topic.
+4 = Exits the Computer Specifications.
+5 = Returns to the previous window.
+6 = Displays the topic button in the "@0".
+
+[AddMsg]
+1 = Windows Operating Mode\t: @0\nTotal Memory\t\t\t: @1 KB ( @2 MB )\nBasic RAM\t\t\t: @3 KB ( @4 MB )\nDIMM Memory\t\t\t: @5 KB ( @6 MB )\nFree Memory Space\t\t: @7 bytes\n
+2 = <<Hard Disk Drive Information>>\nMaximum number of cylinders\t: @0 cylinders\nMaximum number of head\t: @1 heads\nNumber of sectors per track\t: @2 sec\track\nBytes per Sector\t\t\t: @4 byte/sector\nSectors per Cluster\t\t: @5 sector/cluster\nTotal Hard Disk Drive Capacity\t: @3 MB\n
+3 = CPU Type\t:@0\nManufacturer\t:@1\nSecond Cache\t:@2\n@3
+4 = 386 Enhanced Mode,Standard Mode
+5 = Equip Coprosessor.,No Equip Coprosessor.
+6 = Equiped,Nothing
+7 = Hard Disk is not equiped.
+8 = MHz
+9 = DX2WB,DX4,DX4WB,Pentium,Unknown
+10 = Intel,AMD,Cyrix,Unknown
+11 = 16,20,25,33,40,50,60,66,75,80,90,100,120,132,133,150
+;11 = 50,60,66,75,80,90,100,120,132,133,150,unknown,unknown,unknown,unknown,unknown
+
+[SysUse]
+1 = Times New Roman
+2 = hspecenu.hlp
+3 = ..\NEWGIF
+4 = &Help
+5 = &Print
+6 = E&xit
+7 = &Return
+
+[Tab1]
+TabName = Body
+TabPicture = TabBody
+1 = Display
+2 = Keyboard Types
+3 = Pointing Device
+4 = Interfaces
+5 = Battery Pack
+[Tab2]
+TabName = Inside
+TabPicture = TabInner
+1 = FD Drive
+2 = MPU
+3 = Memory
+4 = Hard Disk Drive
+[Tab3]
+TabName = Other
+TabPicture = TabOther
+1 = FD
+2 = Weight / Dimensions
+3 = AC Adapter
+4 = Operating Conditions
+[Tab4]
+TabName = Pin Assignments
+TabPicture = TabPin
+1 = Display Connector Pins
+2 = Printer Connector Pins
+3 = RS-232C Connector Pins
+4 = Mouse/10-Key Keypad Connector Pins
+5 = PC Card Connector Pins
+6 = Sound Jack Pins
+7 = SCSI Connector Pins
+
+;**************************************************
+;		Label Section
+;--------------------------------------------------
+;	Syntax
+;	TopicNo, String ,X(Pixel),Y(Pixel)
+;**************************************************
+[Label]
+1 = 2, Function Keys ,48,35,
+2 = 2, Typewriter Keys ,483,75,
+3 = 2, Shift Key ,493,138,
+4 = 2, Arrow Keys ,495,200,
+5 = 2, Alt Key ,74,205,
+6 = 2, Caps Lock Key ,20,98,
+7 = 2, Fn Key ,74,165,
+
+[JumpBtn]
+1 = 2, USA
+2 = 2, UK
+
+;***********************************************************************
+;	Topic Message Section
+;-----------------------------------------------------------------------
+;	Syntax:
+;	[Tn]		... Index Number n:1 - 20
+;	xxx:n,-- 	... Picture Section
+;	xxx		..  Picture File Name (.GIF Not)
+;	n		..  Display Mode (0..Picture Only, 1..Partition)
+;			If you are not using picture, you write to "Nothing".
+;	xxxxxx		... Topic Strings (Tab Stop 8 Characters)
+;	_MEMORY_INFO	... Memory Information Add.
+;	_HARDDISK_INFO	... Hard-Disk Information Add.
+;	_COPRO_INFO	... Math-Coprosessor Information Add.
+;		This 3 Strings are add information to you writed position.
+;	@		... Topic EOF
+;***********************************************************************
+[Topic_Msg]
+;<Display>
+[T1]
+Nothing
+_LCD_INFO
+!
+D-STN color LCD with backlight
+Screen Size	: 10.4 or 11.3 inches
+Resolution	: 640 x 480 dots(256 colors)
+		: 800 x 600 dots(256 colors)
+Display Color	: White
+!
+TFT color LCD with backlight
+Screen Size	: 10.4 inches
+Resolution	: 640 x 480 dots(65,536 colors)
+		: 800 x 600 dots(65,536 colors)
+Display Color	: White
+!
+D-STN color LCD with backlight
+Screen Size	: 10.4 inches
+Resolution	: 640 x 480 dots(256 colors)
+Display Color	: White
+!
+TFT color LCD with backlight
+Screen Size	: 10.4 inches
+Resolution	: 640 x 480 dots(65,536 colors)
+Display Color	: White
+!
+TFT color LCD with backlight
+Screen Size	: 11.3 inches
+Resolution	: 640 x 480 dots(65,536 colors)
+		: 800 x 600 dots(65,536 colors)
+Display Color	: White
+!
+TFT color LCD with backlight
+Screen Size	: 11.8 inches
+Resolution	: 640 x 480 dots(65,536 colors)
+		: 800 x 600 dots(65,536 colors)
+Display Color	: White
+@
+;<Keyboard Type>
+[T2]
+USKey:0:,UkKey:0:
+@
+<PointingDevice>
+[T3]
+Nothing
+Pointing stick with 2 buttons
+@
+;<Interfaces>
+[T4]
+Nothing
+Parallel			: 1 parallel connector
+Serial			: 1 RS-232C connector (Transfer speed: Max. 115,200 bps)
+Mouse			: 1 connector for mouse, trackball or 10-key keypad
+External CRT		: 1 VGA or SVGA(1024 x 768 dots) connector
+SCSI			: 1 SCSI-2 connector 
+PC Card			: 2 PCMCIA Version 2.1 Type II
+				or
+			  1 PCMCIA Version 2.1 Type III
+Sound			: 1 headphone jack (Stereo)
+			  1 line-in jack (Stereo)
+			  1 microphone jack (Monaural)
+Infrared Communication	: 1 infrared communication port
+@
+;<Battery Pack (NiMH)>
+[T5]
+Battery:1:
+Output			: 12.0 V
+Dimensions		:
+	5.9"(W) x 3.5"(D) x 0.8"(H)
+	149.5mm(W) x 89.3mm(D) x 20.0mm(H)
+Weight			: Approximately 1.29 lbs. (584 g)
+
+@
+;<3.5" Floppy Disk Drive>
+[T6]
+Nothing
+3.5-inch floppy disk drive
+Head Movement Time	: Min. 3 ns/track
+Head Set Ring Time	: Max. 15 ns
+@
+;<MPU>
+[T7]
+Nothing
+_COPRO_INFO
+@
+;<Memory>
+[T8]
+Nothing
+DIMM Slot: 1
+
+_MEMORY_INFO
+@
+;<HardDisk Drive>
+[T9]
+Nothing
+_HARDDISK_INFO
+@
+;<Floppy Disks>
+[T10]
+Disks:1:
+Double-sided, double-density, double-track(2DD) 3.5-inch floppy 
+disk
+Capacity		: 720 Kbytes (when formatted)
+Sectors			: 512 bytes
+Tracks			: 9 sectors/track
+Track Count		: 80 tracks x 2
+Recording Density	: 8,717 bpi
+Recording Method	: MFM (Modified Frequency Modulation)
+ 
+Double-sided, high-density, double-track (2HD) 3.5-inch floppy disk
+Capacity		: 1.44 Mbytes (when formatted)
+Sectors			: 512 bytes
+Tracks			: 18 sectors/track
+Track Count		: 80 tracks x 2
+Recording Density	: 17,434 bpi
+Recording Method	: MFM (Modified Frequency Modulation)
+@
+;<Weight&Dimension>
+[T11]
+View:1:
+Weight		:
+Approximately 9.7 lbs. (4.4 kg) including NiMH battery pack
+ 
+Dimension	:
+	12.5"(W) x 11.46"(D) x 2.87"(H)
+	318mm(W) x 291mm(D) x 73mm(H)
+@
+;<AC Adapter>
+[T12]
+Nothing
+Power Supply		: AC 100-240 V  50/60 Hz
+Output			: 20 V  2.7 A
+Dimensions		: 6.0"(W) x 3.0"(D) x 1.5"(H)
+			  152mm(W) x 76mm(D) x 38mm(H)
+Weight			: Approximately 0.95 lbs. (430g)
+@
+;<Operating Conditions>
+[T13]
+Nothing
+Temperature	: 41°F to 95°F (5°C to 35°C)
+Humidity	: 20% to 80% RH
+@
+
+;== Pin Assignment Topics ==
+;<Display Connector>
+[T14]
+Display:1:
+Shrink-D-SUB 15pin (female)
+
+Pin	Signal Name
+1	Red Video
+2	Green Video
+3	Blue Video
+4	NC
+5	Ground
+6	Ground
+7	Ground
+8	Ground
+9	NC
+10	Ground
+11	NC
+12	NC
+13	Horizontal SYNC
+14	Vertical SYNC
+15	NC
+@
+
+;<Printer Connector>
+[T15]
+Printer:1:
+\U\BSentronics\b\u
+D-SUB 25pin (female)
+
+Pin	I/O	Signal Name(Compatible)
+1	O	-Strobe
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	-Ack
+11	I	Busy
+12	I	PError
+13	I	Select
+14	O	-Auto Fd
+15	I	-Fault
+16	O	-Init
+17	O	-Select In
+18	NA	Signal Ground(-STROBE)
+19	NA	Signal Ground(DATA 0 and DATA 1)
+20	NA	Signal Ground(DATA 2 and DATA 3)
+21	NA	Signal Ground(DATA 4 and DATA 5)
+22	NA	Signal Ground(DATA 6 and DATA 7)
+23	NA	Signal Ground(BUSY and -ERROR)
+24	NA	Signal Ground(PE, SLCT and -ACK)
+25	NA	Signal Ground(-AUTO FD, -SLCT IN and -INIT)
+
+Pin	I/O	Signal Name(Nibble)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	-Data Avail
+16	O	-Init
+17	O	1284 Active
+18	NA	Signal Ground(-STROBE)
+19	NA	Signal Ground(DATA 0 and DATA 1)
+20	NA	Signal Ground(DATA 2 and DATA 3)
+21	NA	Signal Ground(DATA 4 and DATA 5)
+22	NA	Signal Ground(DATA 6 and DATA 7)
+23	NA	Signal Ground(BUSY and -ERROR)
+24	NA	Signal Ground(PE, SLCT and -ACK)
+25	NA	Signal Ground(-AUTO FD, -SLCT IN and -INIT)
+
+Pin	I/O	Signal Name(ECP)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Periph Clk
+11	I	Periph Ack
+12	I	-Ack Reverse
+13	I	Xflag
+14	O	Host Ack
+15	I	-Periph Req
+16	O	-Reverse Req
+17	O	1284 Active
+18	NA	Signal Ground(-STROBE)
+19	NA	Signal Ground(DATA 0 and DATA 1)
+20	NA	Signal Ground(DATA 2 and DATA 3)
+21	NA	Signal Ground(DATA 4 and DATA 5)
+22	NA	Signal Ground(DATA 6 and DATA 7)
+23	NA	Signal Ground(BUSY and -ERROR)
+24	NA	Signal Ground(PE, SLCT and -ACK)
+25	NA	Signal Ground(-AUTO FD, -SLCT IN and -INIT)
+
+Pin	I/O	Signal Name(Byte)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	Data Avail
+16	O	-Init
+17	O	1284 Active
+18	NA	Signal Ground(-STROBE)
+19	NA	Signal Ground(DATA 0 and DATA 1)
+20	NA	Signal Ground(DATA 2 and DATA 3)
+21	NA	Signal Ground(DATA 4 and DATA 5)
+22	NA	Signal Ground(DATA 6 and DATA 7)
+23	NA	Signal Ground(BUSY and -ERROR)
+24	NA	Signal Ground(PE, SLCT and -ACK)
+25	NA	Signal Ground(-AUTO FD, -SLCT IN and -INIT)
+
+Pin	I/O	Signal Name(EPP)
+1	O	-Write
+2	I/O	AD0
+3	I/O	AD1
+4	I/O	AD2
+5	I/O	AD3
+6	I/O	AD4
+7	I/O	AD5
+8	I/O	AD6
+9	I/O	AD7
+10	I	Intr
+11	I	-Wait
+12	I	User Defined 1
+13	I	User Defined 2
+14	O	-D Strb
+15	I	User Defined 3
+16	O	-Init
+17	O	-A Strb
+18	NA	Signal Ground(-STROBE)
+19	NA	Signal Ground(DATA 0 and DATA 1)
+20	NA	Signal Ground(DATA 2 and DATA 3)
+21	NA	Signal Ground(DATA 4 and DATA 5)
+22	NA	Signal Ground(DATA 6 and DATA 7)
+23	NA	Signal Ground(BUSY and -ERROR)
+24	NA	Signal Ground(PE, SLCT and -ACK)
+25	NA	Signal Ground(-AUTO FD, -SLCT IN and -INIT)
+
+@
+;<RS-232C Connector>
+[T16]
+RS232C:1:
+D-SUB 9pin (male)
+
+Pin	I/O	Signal Name
+1	I	Data Carrier Detect
+2	I	Receive Data
+3	O	Transmit Data
+4	O	Data Terminal Ready
+5	NA	Signal Ground
+6	I	Data Set Ready
+7	O	Request to Send
+8	I	Clear to Send
+9	I	Ring Indicate
+@
+;<Mouse/10-Key Keypad Connector>
+[T17]
+MO_10KEY:1:
+miniDIN 6pin
+
+Pin	I/O	Signal Name
+1	I/O	Mouse Data
+2	I/O	Keyboard Data
+3	NA	Signal Ground
+4	NA	+5V
+5	I/O	Mouse Clock
+6	I/O	Keyboard Clock
+@
+;<PC-Card Connector>
+[T18]
+Nothing
+PCMCIA Version 2.1 68 pin 2 slots
+
+Pin	I/O	Signal Name	Pin	I/O	Signal Name
+1	NA	GND		35	NA	GND
+2	I/O	D3		36	O	-CD1
+3	I/O	D4		37	I/O	D11
+4	I/O	D5		38	I/O	D12
+5	I/O	D6		39	I/O	D13
+6	I/O	D7		40	I/O	D14
+7	I	-CE1		41	I/O	D15
+8	I	A10		42	I	-CE2
+9	I	-OE		43	I	RFSH
+10	I	A11		44	I	-IORD
+11	I	A9		45	I	-IOWR
+12	I	A8		46	I	A17
+13	I	A13		47	I	A18
+14	I	A14		48	I	A19
+15	I	-WE/-PGM	49	I	A20
+16	O	-IREQ		50	I	A21
+17	NA	VCC		51	NA	VCC
+18	NA	VPP1		52	NA	VPP2
+19	I	A16		53	I	A22
+20	I	A15		54	I	A23
+21	I	A12		55	I	A24
+22	I	A7		56	I	A25
+23	I	A6		57	NA	RFU
+24	I	A5		58	I	RESET
+25	I	A4		59	O	-WAIT
+26	I	A3		60	O	-INPACK
+27	I	A2		61	I	-REG
+28	I	A1		62	O	-SPKR
+29	I	A0		63	O	-STSCHG
+30	I/O	D0		64	I/O	D8
+31	I/O	D1		65	I/O	D9
+32	I/O	D2		66	I/O	D10
+33	O	-IOCS16	67	O	-CD2
+34	NA	GND		68	NA	GND
+@
+;<Sound Jacks>
+[T19]
+Nothing
+Headphone Jack
+
+Pin	Signal Name
+1	Ground
+2	Headphone Left
+3	Speaker Left
+4	Speaker Right
+5	Headphone Right
+
+Line-in Jack
+
+Pin	Signal Name
+1	Ground
+2	Line-in Left
+3	Ground
+4	Ground
+5	Line-in Right
+
+Microphone Jack
+
+Pin	Signal Name
+1	Ground
+2	Microphone In
+3	Ground
+4	NC
+5	Bias (for Electro condensor microphone)
+@
+
+[T20]
+Nothing
+SCSI-2 Conecctor Pins Pin type 50pin (Female)
+
+Pin	Signal		Pin	Signal
+1	Ground		26	-DB (0)
+2	Ground		27	-DB (1)
+3	Ground		28	-DB (2)
+4	Ground		29	-DB (3)
+5	Ground		30	-DB (4)
+6	Ground		31	-DB (5)
+7	Ground		32	-DB (6)
+8	Ground		33	-DB (7)
+9	Ground		34	-DB (P)
+10	Ground		35	Ground
+11	Ground		36	Ground
+12	Reserved	37	Reserved
+13	Open		38	Termpwr
+14	Reserved	39	Reserved
+15	Ground		40	Ground
+16	Ground		41	-ATN
+17	Ground		42	Ground
+18	Ground		43	-BSY
+19	Ground		44	-ACK
+20	Ground		45	-RST
+21	Ground		46	-MSG
+22	Ground		47	-SEL
+23	Ground		48	-C/D
+24	Ground		49	-REQ
+25	Ground		50	-I/O
+@
+
